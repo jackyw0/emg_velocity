@@ -5,7 +5,7 @@ import os
 from plot_emg_raw import plot_emg
 
 
-def record_emg(port="/dev/tty.usbmodem1101", baud=250000, duration_sec=15, folder="data"):
+def record_emg(port="/dev/tty.usbmodem101", baud=961200, duration_sec=15, folder="data"):
     ser = serial.Serial(port, baud, timeout=1)
     time.sleep(2)
     ser.reset_input_buffer()
